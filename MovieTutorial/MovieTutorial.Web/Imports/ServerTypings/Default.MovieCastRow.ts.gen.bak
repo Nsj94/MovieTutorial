@@ -1,0 +1,72 @@
+﻿
+namespace MovieTutorial.Default {
+    export interface MovieCastRow {
+        MovieCastId?: number;
+        MovieId?: number;
+        PersonId?: number;
+        Character?: string;
+        MovieTitle?: string;
+        MovieDescription?: string;
+        MovieStoryline?: string;
+        MovieYear?: number;
+        MovieReleaseDate?: string;
+        MovieRuntime?: number;
+        MovieKind?: number;
+        PersonFirstName?: string;
+        PersonLastname?: string;
+        PersonBirthDate?: string;
+        PersonBirthPlace?: string;
+        PersonGender?: number;
+        PersonHeight?: number;
+    }
+
+    export namespace MovieCastRow {
+        export const idProperty = 'MovieCastId';
+        export const nameProperty = 'Character';
+        export const localTextPrefix = 'Default.MovieCast';
+        export const deletePermission = 'Administration:General';
+        export const insertPermission = 'Administration:General';
+        export const readPermission = 'Administration:General';
+        export const updatePermission = 'Administration:General';
+
+        export namespace Fields {
+            export declare const MovieCastId;
+            export declare const MovieId;
+            export declare const PersonId;
+            export declare const Character;
+            export declare const MovieTitle;
+            export declare const MovieDescription;
+            export declare const MovieStoryline;
+            export declare const MovieYear;
+            export declare const MovieReleaseDate;
+            export declare const MovieRuntime;
+            export declare const MovieKind;
+            export declare const PersonFirstName;
+            export declare const PersonLastname;
+            export declare const PersonBirthDate;
+            export declare const PersonBirthPlace;
+            export declare const PersonGender;
+            export declare const PersonHeight;
+        }
+
+        [
+            'MovieCastId',
+            'MovieId',
+            'PersonId',
+            'Character',
+            'MovieTitle',
+            'MovieDescription',
+            'MovieStoryline',
+            'MovieYear',
+            'MovieReleaseDate',
+            'MovieRuntime',
+            'MovieKind',
+            'PersonFirstName',
+            'PersonLastname',
+            'PersonBirthDate',
+            'PersonBirthPlace',
+            'PersonGender',
+            'PersonHeight'
+        ].forEach(x => (<any>Fields)[x] = x);
+    }
+}
